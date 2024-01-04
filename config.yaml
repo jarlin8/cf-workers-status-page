@@ -32,9 +32,30 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: ssgg-net
-    name: 嘉盛开户资讯
-    url: 'https://www.ssgg.net'
+  - id: fccm-net
+    name: fccm.net
+    url: 'https://fccm.net'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: funstoutiao-com
+    name: 复利说
+    url: 'https://funstoutiao.com'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: sLinks
+    name: 联盟网址转链
+    url: 'https://s.ifttt.fun/links'
+    method: GET
+    expectStatus: 200
+    linkable: false
+
+  - id: www.ifttt.fun
+    name: EA程序介绍
+    url: 'https://www.ifttt.fun'
     method: GET
     expectStatus: 200
     linkable: true
