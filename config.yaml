@@ -38,3 +38,9 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true
+
+  - id: gemini-api
+    name: geminiAPI
+    url: 'https://geminiapi.ifttt.fun'
+    method: GET
+    expectStatus: 200
