@@ -1,39 +1,40 @@
 settings:
-  title: 'Status Page'
+  title: '服务器运行状态实时监控'
   url: 'https://status.ifttt.fun' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有系统一切正常'
+  notAllmonitorsOperational: '所有系统出现故障'
+  monitorLabelOperational: '正常'
+  monitorLabelNotOperational: '故障'
+  monitorLabelNoData: '无监控数据'
+  dayInHistogramNoData: '无监控数据'
+  dayInHistogramOperational: '一切正常'
+  dayInHistogramNotOperational: ' 事件' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: laowei8-com # unique identifier
+    name: 八强优选
+    # description: 'You write code. They handle the rest.' # default=empty
+    url: 'https://laowei8.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: we.laowei8.com
+    name: 开户通
+    # description: 'Built for anything connected to the Internet.'
+    url: 'https://we.laowei8.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: ssgg-net
+    name: 嘉盛开户资讯
+    url: 'https://ssgg.net'
     method: GET
     expectStatus: 200
+    linkable: true
