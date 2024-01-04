@@ -44,3 +44,11 @@ monitors:
     url: 'https://geminiapi.ifttt.fun'
     method: GET
     expectStatus: 200
+    linkable: false
+
+  - id: movie-web-app
+    name: movie-web.app Proxy
+    url: 'https://simple-proxy.holu.workers.dev/'
+    method: GET
+    expectStatus: 200
+    linkable: false
