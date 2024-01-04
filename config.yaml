@@ -34,7 +34,7 @@ monitors:
 
   - id: ssgg-net
     name: 嘉盛开户资讯
-    url: 'https://ssgg.net'
+    url: 'https://www.ssgg.net'
     method: GET
     expectStatus: 200
     linkable: true
@@ -48,7 +48,7 @@ monitors:
 
   - id: movie-web-app
     name: movie-web.app Proxy
-    url: 'https://simple-proxy.holu.workers.dev/'
+    url: 'https://simple-proxy.holu.workers.dev'
     method: GET
     expectStatus: 200
     linkable: false
